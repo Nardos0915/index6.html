@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(./image\ 3.jpg);
+            background-position-y: center;
+            background-size: cover;
+
+
+        }
+
+        img {
+            width: 600px;
+            height: 100px;
+        }
+
+        div {
+            border: 2px solid black;
+            margin: auto;
+            background-color: white;
+            text-align: center;
+            padding: 0px;
+            width: 400px;
+        }
+
+        button {
+            margin-top: 15px;
+            margin-bottom: 20px;
+            padding: 6px;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>COUNTER</p>
+        <label id="myLabel">2</label><br>
+        <button onclick="increaseButton()" id="increaseButton">Increase</button>
+        <button onclick="decreaseButton()">Decrease</button>
+        <p id="message"></p>
+    </div>
+    <script>
+        let counter = 0
+
+        f
+
+        function increaseButton() {
+            if(counter<=9){
+                counter = counter + 1
+            document.getElementById("myLabel").innerHTML = counter
+          
+            }
+            else{
+                document.getElementById("message").innerHTML ="counter can't  go above 10";
+
+            }
+            
+
+        }
+        function decreaseButton() {
+            if(counter>1){
+                counter = counter - 1
+            document.getElementById("myLabel").innerHTML = counter
+
+            }
+            else{
+                document.getElementById("message").innerHTML ="counter can't  below 0";
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
